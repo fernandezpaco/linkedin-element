@@ -1,6 +1,6 @@
-# user-profile-dm
+# linkedin-element
 
-linkedin-element takes an oauth access token and returns the linkeding user profile. 
+linkedin-element takes an oauth access token and returns the linkedin user profile. 
 
 It also can be used to share a comment in your linkeding profile with the share(comment) method.
 
