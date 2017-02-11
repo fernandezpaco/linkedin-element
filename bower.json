@@ -1,0 +1,20 @@
+{
+  "name": "linkedin-element",
+  "version": "1.0.0",
+  "description": "Your component description",
+  "keywords": [
+    "web-components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0",
+    "cells-ajax": "ssh://git@globaldevtools.bbva.com:7999/cel/cells-ajax.git#0.3.2"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^4.0.0",
+    "test-fixture": "polymerelements/test-fixture#^1.0.0"
+  },
+  "main": [
+    "linkedin-element.html"
+  ]
+}

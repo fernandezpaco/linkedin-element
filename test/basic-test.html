@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+  <script src="../../test-fixture/test-fixture-mocha.js"></script>
+
+  <link rel="import" href="../../polymer/polymer.html">
+  <link rel="import" href="../user-profile-dm.html">
+</head>
+
+<body>
+  <test-fixture id="myEl">
+    <template>
+      <user-profile-dm></user-profile-dm>
+    </template>
+  </test-fixture>
+
+  <script>
+    suite('<user-profile-dm> tag', function() {
+      var myEl;
+
+      setup(function() {
+        myEl = fixture('myEl');
+      });
+
+      teardown(function() {
+        myEl.remove();
+      });
+
+      suite('in general', function() {
+        test('should be in document', function() {
+          expect(myEl).not.to.be.undefined;
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

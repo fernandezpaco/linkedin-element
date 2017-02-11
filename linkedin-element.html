@@ -1,0 +1,25 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../cells-ajax/cells-ajax.html">
+
+<!--
+# nlu-dm
+
+Data manager description.
+
+Example:
+```html
+<nlu-dm></nlu-dm>
+```
+-->
+
+<dom-module id="linkedin-element">
+  <template>
+ 	<cells-ajax id="ajax" auto last-response="{{users}}"
+    on-response="onResponse" on-error="onError"></cells-ajax>
+
+ 	<cells-ajax id="ajax2" auto 
+    on-response="onResponse2" on-error="onError2"></cells-ajax>
+
+  </template>
+  <script src="linkedin-element.js"></script>
+</dom-module>
